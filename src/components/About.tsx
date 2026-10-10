@@ -58,7 +58,7 @@ export const About: React.FC = () => {
                     src={PERSONAL_INFO.profileImagePath}
                     alt={PERSONAL_INFO.fullName}
                     onError={() => setImageError(true)}
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover object-[center_20%]"
                   />
                 ) : (
                   <span className="font-bold text-blue-700 text-base">{PERSONAL_INFO.initials}</span>

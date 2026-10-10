@@ -149,7 +149,7 @@ export const Hero: React.FC = () => {
                       src={PERSONAL_INFO.profileImagePath}
                       alt="Keerthana Sangem - Cybersecurity Student and Developer"
                       onError={() => setImageError(true)}
-                      className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-102"
+                      className="w-full h-full object-cover object-[center_20%] transition-transform duration-500 hover:scale-102"
                     />
                   ) : (
                     <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center bg-gradient-to-b from-blue-50/80 to-blue-100/50">

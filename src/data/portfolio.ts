@@ -180,6 +180,73 @@ export const TIMELINE_DATA: ExperienceItem[] = [
   },
 ];
 
+export interface Certificate {
+  id: string;
+  title: string;
+  issuer: string;
+  issueDate: string;
+  fileName: string;
+  filePath: string;
+  category: string;
+}
+
+export const CERTIFICATES_DATA: Certificate[] = [
+  {
+    id: 'cii-ai-ml',
+    title: 'Foundational Course on Applied Machine Learning and AI',
+    issuer: 'Confederation of Indian Industry (CII)',
+    issueDate: '30 September 2026',
+    fileName: 'cii-foundational-ai-ml.pdf',
+    filePath: '/certificates/cii-foundational-ai-ml.pdf',
+    category: 'AI & Machine Learning',
+  },
+  {
+    id: 'infosys-python',
+    title: 'Basics of Python',
+    issuer: 'Infosys Springboard',
+    issueDate: '18 November 2025',
+    fileName: 'infosys-basics-of-python.pdf',
+    filePath: '/certificates/infosys-basics-of-python.pdf',
+    category: 'Programming & Scripting',
+  },
+  {
+    id: 'infosys-fundamentals',
+    title: 'Computer Fundamentals 101',
+    issuer: 'Infosys Springboard',
+    issueDate: '15 November 2025',
+    fileName: 'infosys-computer-fundamentals-101.pdf',
+    filePath: '/certificates/infosys-computer-fundamentals-101.pdf',
+    category: 'Computer Science',
+  },
+  {
+    id: 'infosys-prompt-eng',
+    title: 'Prompt Engineering',
+    issuer: 'Infosys Springboard',
+    issueDate: '6 April 2026',
+    fileName: 'infosys-prompt-engineering.pdf',
+    filePath: '/certificates/infosys-prompt-engineering.pdf',
+    category: 'Generative AI',
+  },
+  {
+    id: 'google-cloud-security',
+    title: 'Trust and Security with Google Cloud',
+    issuer: 'Google Cloud',
+    issueDate: '11 August 2026',
+    fileName: 'google-cloud-trust-and-security.pdf',
+    filePath: '/certificates/google-cloud-trust-and-security.pdf',
+    category: 'Cloud Security',
+  },
+  {
+    id: 'ethical-hacking',
+    title: 'Ethical Hacking',
+    issuer: 'Croma Campus',
+    issueDate: '25 July 2026',
+    fileName: 'ethical-hacking.pdf',
+    filePath: '/certificates/ethical-hacking.pdf',
+    category: 'Cybersecurity',
+  },
+];
+
 export const SYSTEM_PORTFOLIO_CONTEXT = `
 You are Ask Sangem AI, the official AI assistant on Keerthana Sangem's personal portfolio website.
 Answer questions accurately using only the verified information below:
@@ -206,6 +273,14 @@ Verified Projects:
 
 Verified Experience:
 - Technical project experience at Decode Labs, as described in her LinkedIn profile.
+
+Verified Certifications (Certificate Vault):
+1. Foundational Course on Applied Machine Learning and AI — Confederation of Indian Industry (CII), 30 September 2026
+2. Basics of Python — Infosys Springboard, 18 November 2025
+3. Computer Fundamentals 101 — Infosys Springboard, 15 November 2025
+4. Prompt Engineering — Infosys Springboard, 6 April 2026
+5. Trust and Security with Google Cloud — Google Cloud, 11 August 2026
+6. Ethical Hacking — Croma Campus, 25 July 2026
 
 Career Objective:
 - Seeking internship opportunities in cybersecurity or software development, applying technical knowledge to practical problems, developing real-world experience, and contributing to secure and reliable software.

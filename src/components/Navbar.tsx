@@ -16,6 +16,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
     { label: 'About', href: '#about' },
     { label: 'Skills', href: '#skills' },
     { label: 'Projects', href: '#projects' },
+    { label: 'Certificates', href: '#certificates' },
     { label: 'Experience', href: '#experience' },
     { label: 'Contact', href: '#contact' },
   ];
@@ -24,7 +25,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
 
-      const sections = ['about', 'skills', 'projects', 'experience', 'contact'];
+      const sections = ['about', 'skills', 'projects', 'certificates', 'experience', 'contact'];
       const scrollPosition = window.scrollY + 120;
 
       for (const section of sections) {
@@ -84,7 +85,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
                   src={PERSONAL_INFO.profileImagePath}
                   alt={PERSONAL_INFO.fullName}
                   onError={() => setImageError(true)}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-[center_20%]"
                 />
               ) : (
                 <span className="text-xs font-bold text-blue-700 tracking-wider">

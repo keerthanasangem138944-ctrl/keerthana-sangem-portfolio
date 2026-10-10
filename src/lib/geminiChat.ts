@@ -157,6 +157,9 @@ export async function processChatRequest(
 
 function getVerifiedFallbackAnswer(query: string): string {
   const q = query.toLowerCase();
+  if (q.includes('certificate') || q.includes('certification') || q.includes('vault') || q.includes('course')) {
+    return "Keerthana has earned 6 verified certifications featured in her **Certificate Vault**:\n1. **Foundational Course on Applied Machine Learning and AI** (CII, Sept 2026)\n2. **Basics of Python** (Infosys Springboard, Nov 2025)\n3. **Computer Fundamentals 101** (Infosys Springboard, Nov 2025)\n4. **Prompt Engineering** (Infosys Springboard, April 2026)\n5. **Trust and Security with Google Cloud** (Google Cloud, Aug 2026)\n6. **Ethical Hacking** (Croma Campus, July 2026)\n\nYou can view and download all certificates in the Certificate Vault section!";
+  }
   if (q.includes('skill') || q.includes('language') || q.includes('python') || q.includes('java') || q.includes('tech')) {
     return "Keerthana's verified technical skills include **Java**, **Python**, **C**, and **Advanced Java**, alongside **Cybersecurity fundamentals**, **Password strength analysis**, and version control with **Git & GitHub**.";
   }

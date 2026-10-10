@@ -36,6 +36,14 @@ Designed with a restrained blue-and-white theme, verified academic & project det
 ├── api/
 │   └── chat.ts                     # Vercel serverless function (Gemini API)
 ├── public/
+│   ├── certificates/
+│   │   ├── README.md               # Guide for uploading certificate PDFs
+│   │   ├── cii-foundational-ai-ml.pdf
+│   │   ├── infosys-basics-of-python.pdf
+│   │   ├── infosys-computer-fundamentals-101.pdf
+│   │   ├── infosys-prompt-engineering.pdf
+│   │   ├── google-cloud-trust-and-security.pdf
+│   │   └── ethical-hacking.pdf
 │   ├── images/
 │   │   ├── README.md               # Guide for uploading keerthana-profile.jpg
 │   │   └── keerthana-profile.jpg   # Profile photograph (manual upload)
@@ -47,6 +55,7 @@ Designed with a restrained blue-and-white theme, verified academic & project det
 │   │   ├── Achievements.tsx        # Experience & Education timeline
 │   │   ├── About.tsx               # Academic narrative & career objective
 │   │   ├── BackToTop.tsx           # Floating scroll-to-top button
+│   │   ├── Certificates.tsx        # Certificate Vault with view & download
 │   │   ├── Chatbot.tsx             # Ask Sangem AI floating chat interface
 │   │   ├── Contact.tsx             # Contact form with email client fallback
 │   │   ├── Footer.tsx              # Minimalist footer & social links
@@ -124,7 +133,19 @@ You can upload both files directly through the GitHub web interface:
    ```
 4. Click **Commit changes**.
 
-*The portfolio immediately detects both files upon next build or page load!*
+### Step 3: Upload Certificate PDFs
+1. Navigate to the `public/certificates` folder in the repository.
+2. Click **Add file** > **Upload files**.
+3. Drag and drop your 6 certificate PDF files with these exact filenames:
+   - `cii-foundational-ai-ml.pdf`
+   - `infosys-basics-of-python.pdf`
+   - `infosys-computer-fundamentals-101.pdf`
+   - `infosys-prompt-engineering.pdf`
+   - `google-cloud-trust-and-security.pdf`
+   - `ethical-hacking.pdf`
+4. Click **Commit changes**.
+
+*The portfolio immediately detects all files upon next build or page load!*
 
 ---
 

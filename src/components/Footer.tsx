@@ -56,6 +56,13 @@ export const Footer: React.FC = () => {
               Projects
             </a>
             <a
+              href="#certificates"
+              onClick={(e) => handleNavClick(e, 'certificates')}
+              className="text-slate-400 hover:text-white transition-colors"
+            >
+              Certificates
+            </a>
+            <a
               href="#experience"
               onClick={(e) => handleNavClick(e, 'experience')}
               className="text-slate-400 hover:text-white transition-colors"

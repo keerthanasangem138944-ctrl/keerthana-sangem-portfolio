@@ -1,0 +1,7 @@
+# Robots.txt for Keerthana Sangem Portfolio
+# Allow all search engine crawlers to access the public portfolio
+User-agent: *
+Allow: /
+
+# Replace https://YOUR-PRODUCTION-DOMAIN with your actual custom domain or Vercel production domain
+Sitemap: https://YOUR-PRODUCTION-DOMAIN/sitemap.xml
